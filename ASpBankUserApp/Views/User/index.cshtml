@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Registration-2</title>
+    <link rel="stylesheet" href="../Content/css/users.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <form class="login-form">
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>ID</th>
+                <th>Email</th>
+
+                <th>Mobile</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Tavdevi</th>
+                <th></th>
+            </tr>
+        </table>
+        <div class="users">
+            <div class="user">
+                <table class="user1">
+                    <tr>
+
+                        <th>Nikita</th>
+                        <th>razumni</th>
+                        <th>01249874531</th>
+                        <th>razumny5@gmail.com</th>
+                        <th>+955 599 70 60 19</th>
+                        <th>Georgia</th>
+                        <th>Tbilisi</th>
+                        <th>Tavdevi</th>
+                        <th id="chek">
+                            <button class="btn"><i class="fa fa-close"></i></button>
+                            <button class="btn"><i class="fa fa-edit"></i></button>
+                            @*<button class="btn"><i class="fa fa-eye"></i></button>*@
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <table class="buttons">
+            <tr>
+                <th><input type="button" onclick="location.href='@Url.Action("Registration/2", "User")'" name="" value="Add User"></th>
+                <th><input type="button" onclick="location.href='@Url.Action("OperationRegistration", "User")'" name="" value="Add Operation"></th>
+
+            </tr>
+        </table>
+
+    </form>
+
+
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function () {
+            if ($(this).val() == "")
+                $(this).removeClass("focus");
+        });
+
+    </script>
+
+
+
+</body>
+</html>

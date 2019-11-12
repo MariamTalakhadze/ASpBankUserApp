@@ -1,0 +1,183 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+  box-sizing: border-box;
+  font-family: 'Asap', sans-serif;
+
+}
+
+body{
+  min-height: 100vh;
+  background-image: url("img/reg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+select:invalid { color: gray; }
+.login-form{
+  width: 710px;
+  background: #f1f1f1;
+  height: 640px;
+  padding: 40px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border:solid 2px #3498db;
+  transform: translate(-50%,-50%);
+}
+th{
+  padding-left:40px;
+  /* border:solid 2px; */
+
+}
+
+.login-form h1{
+  text-align: center;
+  width: 300px;
+  color: #3498db;
+  top:20%;
+  padding: 40px 20px;
+  margin: auto;
+}
+.login-form h1:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.login-form:hover{
+  height: 645px;
+  width: 715px;
+  transition: 0.4s;
+  border:solid 4px #3498db;
+}
+.login-form:hover{
+  transition: 0.3s;
+  border:solid 5px #3498db;
+}
+
+.txtb{
+  width: 250px;;
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 7px 0;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+select{
+  background-color: silver;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: none;
+}
+select,option{
+  width:250px;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  color:grey;
+
+
+}
+
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  transition: .5s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 0%;
+}
+#regbut{
+  margin-top: 50px;
+}
+.regbtn{
+
+  margin: auto;
+  display: block;
+  width: 250px;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg,#1488CC,#2B32B2);
+  background-size: 200%;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 25px;
+  padding: 10px;
+}
+#line{
+  height: 30px;
+}
+#space{
+  height: 60px;
+}
+.regbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 25px;
+}
+.logout{
+  position: relative;
+  left:90%;
+  top: 55px;
+
+}
+.logout input{
+  height: 50px;
+  color: White;
+  font-size: 20px;
+  width: 100px;
+  border: none;
+  background: linear-gradient(120deg,#1488CC,#2B32B2);
+  background-size: 200%;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 20px;
+  padding: 10px;
+}
+.logout input:hover{
+  background-position: right;
+  transform: scale(1.05);
+  transition: 0.3s;
+}

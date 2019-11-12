@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="~/Content/css/style_reg.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <form class="login-form">
+
+        <h1>Registration</h1>
+        <table>
+            <tr>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Name"></span>
+                    </div>
+                </th>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Lastname"></span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="ID"></span>
+                    </div>
+                </th>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Email"></span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Mobile"></span>
+                    </div>
+                </th>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Gender</option>
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="space">
+                    <select required>
+                        <option value="" disabled selected hidden>Country</option>
+                        <option value="0">Georgia</option>
+                        <option value="1">Armenia</option>
+                        <option value="3">Azerbaijan</option>
+                    </select>
+                </th>
+                </th>
+                <th id="space">
+                    <select required>
+                        <option value="" disabled selected hidden>City</option>
+                        <option value="0">Tbilisi</option>
+                        <option value="1">Rustavi</option>
+                        <option value="3">Gori</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2" id="line"></th>
+            </tr>
+            @*<tr>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Tavmdevi</option>
+                        <option value="0">Mama</option>
+                        <option value="1">Deda</option>
+                        <option value="3">Dzaxli</option>
+                    </select>
+                </th>
+                <th>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="ID"></span>
+                    </div>
+                </th>
+            </tr>*@
+        </table>
+
+        <input id="regbut" type="submit" class="regbtn" value="Registrate">
+
+
+    </form>
+    <div class="logout">
+        <input type="button" name="" value="Logout">
+    </div>
+
+    <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+    </script>
+
+
+</body>
+</html>

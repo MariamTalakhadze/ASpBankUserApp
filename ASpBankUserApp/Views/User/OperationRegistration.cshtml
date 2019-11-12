@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Registration-2</title>
+    <link rel="stylesheet" href="../Content/css/reg-2.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <form class="login-form">
+        <h1>Operation</h1>
+        <table>
+            <tr>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Users</option>
+                        <option value="0">person 1</option>
+                        <option value="1">person 2</option>
+                        <option value="3">person 3</option>
+                    </select>
+                </th>
+                <th>
+                    <div class="credit">
+                        <select required>
+                            <option value="" disabled selected hidden>Operation</option>
+                            <option value="0">Credit</option>
+                            <option value="1">Deposit</option>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Tavdevi</option>
+                        <option value="0">person 1</option>
+                        <option value="1">person 2</option>
+                        <option value="3">person 3</option>
+                    </select>
+                </th>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Tavdevi</option>
+                        <option value="0">Mother</option>
+                        <option value="1">Father</option>
+                        <option value="3">Sister</option>
+                        <option value="3">Brother</option>
+                        <option value="3">Wife</option>
+                        <option value="3">Husband</option>
+                    </select>
+                </th>
+                </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="txtb">
+                        <input type="number">
+                        <span data-placeholder="Value"></span>
+                </th>
+                <th>
+                    <select required>
+                        <option value="" disabled selected hidden>Month</option>
+                        <option value="0">1</option>
+                        <option value="1">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="0">7</option>
+                        <option value="1">8</option>
+                        <option value="3">9</option>
+                        <option value="3">10</option>
+                        <option value="3">11</option>
+                        <option value="3">12</option>
+                    </select>
+                </th>
+                </th>
+            </tr>
+        </table>
+        <input id="regbut" type="submit" class="regbtn" value="Done">
+    </form>
+    <div class="logout">
+        <input type="button" name="" value="Logout">
+    </div>
+
+    <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+    </script>
+
+
+
+</body>
+</html>
