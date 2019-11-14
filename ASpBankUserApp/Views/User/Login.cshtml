@@ -10,19 +10,17 @@
 </head>
 <body>
 
-    <form class="login-form">
+    <form class="login-form" action="LoginPost" method="post">
         <h1>Login</h1>
-
         <div class="txtb">
             <input type="text">
-            <span data-placeholder="Username"></span>
+            <span data-placeholder="Username" name="Name" id="Name"></span>
         </div>
-
         <div class="txtb">
             <input type="password">
-            <span data-placeholder="Password"></span>
+            <span data-placeholder="Password" name="Password" id="Password"></span>
         </div>  
-        <input type="button" onclick="location.href='@Url.Action("Index", "User")'" class="logbtn" value="Login">
+        <input type="submit" class="logbtn" value="Login">
         @*<div class="forgot">
             Forgot account?
         </div>*@
